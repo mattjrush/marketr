@@ -1,0 +1,115 @@
+[
+    {
+        "pk": 1, 
+        "model": "survey.survey", 
+        "fields": {
+            "closes": "2009-08-05", 
+            "opens": "2009-07-29", 
+            "title": "Winning Answers Test"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "survey.question", 
+        "fields": {
+            "survey": 1, 
+            "question": "Clear Winner"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "survey.question", 
+        "fields": {
+            "survey": 1, 
+            "question": "2-Way Tie"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "survey.question", 
+        "fields": {
+            "survey": 1, 
+            "question": "No Responses"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "survey.question", 
+        "fields": {
+            "survey": 1, 
+            "question": "No Answers"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "survey.answer", 
+        "fields": {
+            "answer": "No Votes", 
+            "votes": 0, 
+            "question": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "survey.answer", 
+        "fields": {
+            "answer": "Max Votes", 
+            "votes": 8, 
+            "question": 1
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "survey.answer", 
+        "fields": {
+            "answer": "Some Votes", 
+            "votes": 3, 
+            "question": 1
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "survey.answer", 
+        "fields": {
+            "answer": "Max Votes 1", 
+            "votes": 9, 
+            "question": 2
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "survey.answer", 
+        "fields": {
+            "answer": "Max Votes 2", 
+            "votes": 9, 
+            "question": 2
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "survey.answer", 
+        "fields": {
+            "answer": "Some Votes", 
+            "votes": 3, 
+            "question": 2
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "survey.answer", 
+        "fields": {
+            "answer": "No Votes 1", 
+            "votes": 0, 
+            "question": 3
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "survey.answer", 
+        "fields": {
+            "answer": "No Votes 2", 
+            "votes": 0, 
+            "question": 3
+        }
+    }
+]
