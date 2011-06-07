@@ -53,6 +53,8 @@ class Question(models.Model):
         max_votes = self.answer_set.aggregate(Max('votes')).values()[0]
         if max_votes and max_votes > 0:
             rv = self.answer_set.filter(votes=max_votes)
+        else:
+            rv = self.answer_set.none()
         return rv
     
     def __unicode__(self):
