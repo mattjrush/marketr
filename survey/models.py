@@ -43,6 +43,10 @@ class Survey(models.Model):
         ¿Como está usted? (opens 2009-12-28, closes 2010-01-04)
         """
         return u'%s (opens %s, closes %s)' % (self.title, self.opens, self.closes)
+    
+    def get_absolute_url(self):
+        from django.core.urlresolvers import reverse
+        return reverse('survey-detail', args=(self.pk))
 
 class Question(models.Model):
     question = models.CharField(max_length=200)

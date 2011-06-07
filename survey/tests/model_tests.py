@@ -83,7 +83,7 @@ class SurveySaveTest(TestCase):
         self.assertRaises(IntegrityError, Survey.objects.create,title=self.t)
         
 class SurveyManagerTest(TestCase):
-    def setUp(TestCase):
+    def setUp(self):
         today = datetime.date.today()
         oneday = datetime.timedelta(1)
         yesterday = today - oneday
